@@ -12,7 +12,7 @@ public class Player {
     protected int index;
     protected boolean isBidder = false;
     public final boolean isHuman;
-    public final static boolean allowPrint = false;
+    public final static boolean allowPrint = true;
 
     public Player(String name, Strategy strategy, int index) {
         this.name = name;

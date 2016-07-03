@@ -10,8 +10,8 @@ public class Game {
     public static final int CARDS_IN_TALON = 6;
     public static final int PLAYERS_COUNT = 4;
     public static final int TOTAL_POINTS = 70;
-    public static final int END_GAME_POINTS = 1000000;
-    public static final int MAX_GAMES = 10000;
+    public static final int END_GAME_POINTS = 1000;
+    public static final int MAX_GAMES = Integer.MAX_VALUE;
     public static final int PREFERANC_FUNCTION_LINES = 529;
 
 
@@ -85,18 +85,17 @@ public class Game {
 
 
 
-/*
         System.out.println("Write your name");
         System.out.print("> ");
         String name;
         Scanner in = new Scanner(System.in);
-        name = in.nextLine();*/
+        name = in.nextLine();
 
-        players.add(new Player("Alice R", Strategy.CAREFUL, 0));
-        players.add(new Player("Bob C", Strategy.CAREFUL, 1));
-        //players.add(new HumanPlayer(name, 1));
-        players.add(new Player("Cindy C", Strategy.PLAY_POSSUM, 2));
-        players.add(new Player("Dean C", Strategy.CAREFUL, 3));
+        //players.add(new Player("Alice R", Strategy.CAREFUL, 0));
+        players.add(new Player("Bob", Strategy.CAREFUL, 0));
+        players.add(new HumanPlayer(name, 1));
+        players.add(new Player("Cindy", Strategy.PLAY_POSSUM, 2));
+        players.add(new Player("Dean", Strategy.GOLDEN_MEAN, 3));
     }
 
     private void initDeck() {

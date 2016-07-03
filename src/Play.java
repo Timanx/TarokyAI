@@ -17,7 +17,7 @@ public  class Play {
     private ArrayList<CardsFan<Card>> playedCardsByPlayer = new ArrayList<>();
 
     private static final boolean allowGameDataPrint = false;
-    private static final boolean allowGameInfoPrint = false;
+    private static final boolean allowGameInfoPrint = true;
 
     //Card that highest bidder cooperates with during first or second duty
     private Card cooperation = null;
